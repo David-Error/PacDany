@@ -7,20 +7,36 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 	<style>
-	  html, body {
-		background: #424242;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-	  }
+		html, body {
+			background: #424242;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
 
-	  #unity-container {
-		background: black;
-	  }
-</style>
-
+		#unity-container {
+			background: black;
+		}
+	  
+		#credits {
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: white;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
+		
+		#credits a,
+		#credits a:visited,
+		#credits a:hover,
+		#credits a:active {
+			color: white;
+		}
+	</style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -38,6 +54,15 @@
         <div id="unity-build-title">PacDany</div>
       </div>
     </div>
+	<span id="credits">
+		Original Idea: Matt Kittredge<br />
+		Music: <a href="https://thewarningband.com" target="_blank">The Warning</a><br />
+		Music to 8-Bit: <a href="https://www.instagram.com/diz4zter" target="_blank">diz4zter</a><br />
+		Code: David G
+	</span>
+	
+	
+	
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -80,7 +105,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DavidG",
         productName: "PacDany",
-        productVersion: "0.2",
+        productVersion: "0.4",
         showBanner: unityShowBanner,
       };
 
